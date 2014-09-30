@@ -36,5 +36,11 @@ slidify("index.Rmd")
 
 
 ---
-
+## Edit index.rmd
+1.Edit index.rmd & save
+2.slidify("index.Rmd")
+3.git status
+4.git add --a
+5.git status
+6.git commit -m "first edited"
 
