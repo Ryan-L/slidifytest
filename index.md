@@ -43,4 +43,4 @@ slidify("index.Rmd")
 4.git add --a
 5.git status
 6.git commit -m "first edited"
-
+git push -u origin master
