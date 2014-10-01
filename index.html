@@ -43,7 +43,7 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h1>Test flow</h1>
+    <h2>Test flow</h2>
   </hgroup>
   <article data-timings="">
     <ol>
@@ -61,23 +61,41 @@
     <h2>Install Slidify</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>Reference the <a href="http://slidify.github.io/start">http://slidify.github.io/start</a> Slidify Start  </p>
+
+<pre><code> library(devtools)
+
+ install_github(&#39;slidify&#39;, &#39;ramnathv&#39;)
+
+ install_github(&#39;slidifyLibraries&#39;, &#39;ramnathv&#39;)
+</code></pre>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-3" style="background:;">
   <hgroup>
-    <h2>Start Slidify</h2>
+    <h2>Start Slidify &amp; git</h2>
   </hgroup>
   <article data-timings="">
-    <p>1.
-library(slidify)
-author(&quot;testfile&quot;)
-slidify(&quot;index.Rmd&quot;)
-2.Terminal 
-.$ git init
-.$ gitk --all&amp; (open the Wish)</p>
+    <p>在R or Rstudio 下
+    library(slidify)</p>
+
+<pre><code>author(&quot;testfile&quot;) 
+
+slidify(&quot;index.Rmd&quot;)   
+
+publish(user = &quot;USER&quot;, repo = &quot;REPO&quot;, host = &#39;github&#39;)
+# replace USER and REPO with your username and reponame
+</code></pre>
+
+<p>在 Terminal  </p>
+
+<pre><code>$ git init
+
+$ gitk --all&amp; (open the Wish)
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
@@ -88,13 +106,16 @@ slidify(&quot;index.Rmd&quot;)
     <h2>Edit index.rmd</h2>
   </hgroup>
   <article data-timings="">
-    <p>1.Edit index.rmd &amp; save
-2.slidify(&quot;index.Rmd&quot;)
-3.git status
-4.git add --a
-5.git status
-6.git commit -m &quot;first edited&quot;
-git push -u origin master</p>
+    <p>1.Edit index.rmd &amp; save<br>
+2.slidify(&quot;index.Rmd&quot;)<br>
+3.git status<br>
+4.git add --a<br>
+5.git status<br>
+6.git commit -m &quot;first edited&quot;<br>
+7.At github create a new repo<br>
+8.git remove add origin <a href="https://xxxxxxxxxxxx">https://xxxxxxxxxxxx</a><br>
+9.git remove -v<br>
+10.git push -u origin master        </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -118,7 +139,7 @@ git push -u origin master</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Start Slidify'>
+        data-slide=3 title='Start Slidify &amp; git'>
          3
       </a>
     </li>
